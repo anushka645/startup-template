@@ -145,17 +145,6 @@ p {
   }
 }
 
-.container {
-  @media #{$xs} {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  @media #{$sm} {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 .back-to-top {
   width: 40px;
   height: 40px;
