@@ -529,11 +529,13 @@ p {
   background-repeat: no-repeat;
   position: relative;
 }
+.ud-hero .row{
+  --bs-gutter-x: 0px;
+}
 
 .navbar-nav.mx-auto{
   margin-left: auto!important;
   margin-right: 0 !important;
-  margin-top: 5%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -764,7 +766,7 @@ p {
 }
 
 .ud-features {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 90px;
 }
 
@@ -1060,7 +1062,7 @@ p {
 }
 
 .ud-single-feature .ud-feature-desc {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 40px;
 }
@@ -1177,7 +1179,7 @@ p {
 
 /* ===== Pricing CSS ===== */
 .ud-pricing {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 90px;
   background: #f3f4fe;
 }
@@ -1337,7 +1339,7 @@ p {
 
 /* ===== FAQ CSS ===== */
 .ud-faq {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 90px;
   background: white;
   position: relative;
@@ -1440,7 +1442,8 @@ p {
 
 /* ===== Testimonials CSS ===== */
 .ud-testimonials {
-  padding-top: 120px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {
@@ -1561,7 +1564,7 @@ p {
 
 /* ===== Team CSS ===== */
 .ud-team {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 80px;
 }
 
@@ -1659,7 +1662,8 @@ p {
 
 /* ===== Contact CSS ===== */
 .ud-contact {
-  padding: 120px 0px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   position: relative;
 }
 
@@ -2138,14 +2142,37 @@ p {
   padding-bottom: 80px;
 }
 
+.ud-blog-grids .container{
+  max-width: 1600px;
+  padding-left: 14px;
+}
+
+.blog-heading{
+  color: black;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .ud-blog-grids.ud-related-articles {
   padding-top: 100px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 412px) {
   .ud-blog-grids {
-    padding-top: 80px;
+    margin-top: 120px;
+    padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .ud-blog-grids .container{
+    max-width: 1200px;
+    padding-left: 40px;
+  }
+
+  .blog-heading{
+    font-size: 32px;
+    margin-top: 0px;
+  margin-bottom: 10px;
   }
 }
 
@@ -2234,12 +2261,19 @@ p {
 
 /* ====== Blog Details CSS ====== */
 .ud-blog-details {
-  padding-top: 120px;
+  margin-top: 5%;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {
   .ud-blog-details {
-    padding-top: 80px;
+    margin-top: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .ud-blog-details .container .row{
+
   }
 }
 
@@ -2954,6 +2988,51 @@ p {
     margin: 5px 10px;
     font-size: 14px;
     padding: 10px 20px;
+  }
+}
+.word-cloud {
+  max-width: 100%;
+  padding: 20px;
+  padding-top: 0px;
+  text-align: center;
+}
+.word {
+  display: inline-block;
+  margin: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.word:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+.size1 { font-size: clamp(14px, 5vw, 2.5rem); color: #23a455; }
+.size2 { font-size: clamp(12px, 4.5vw, 2rem); color: #1d8a44; }
+.size3 { font-size: clamp(10px, 4vw, 1.8rem); color: #156c35; }
+.size4 { font-size: clamp(8px, 3.5vw, 1.6rem); color: #0e4f27; }
+.size5 { font-size: clamp(6px, 3vw, 1.4rem); color: #092f19; }
+
+@media (max-width: 412px) {
+  .word-cloud{
+    text-align: start;
+    list-style-type: disclosure-closed;
+  }
+  .word {
+    display: list-item;
+    transition: none;
+    font-weight: 400;
+    margin: 0px;
+    padding-left: 10px;
+  }
+  .word:hover {
+    transform: none;
+    z-index: 0;
+  }
+  .size1, .size2, .size3, .size4, .size5{
+    font-size: 16px;
+    color: var(--body-color);
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
