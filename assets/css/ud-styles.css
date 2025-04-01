@@ -2133,7 +2133,7 @@ p {
 }
 
 .ud-blog-grids .container{
-  max-width: 1600px;
+  max-width: 1500px;
   padding-left: 14px;
 }
 
@@ -3031,8 +3031,12 @@ p {
     width: 18rem;
     height: 10rem;
     margin: 10px;
-    margin-right: 30px;
+    margin-right: 60px;
   }
+}
+
+#about .container{
+  max-width: 1500px;
 }
 
 .about-desc{
