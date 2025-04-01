@@ -150,10 +150,6 @@ p {
   margin-top: 10% !important;
 }
 
-.about-image{
-  margin-top: 10% !important;
-}
-
 .ud-main-btn:hover {
   color: var(--white);
   background: var(--heading-color);
@@ -1088,14 +1084,8 @@ p {
 
 /* ===== About CSS ===== */
 .ud-about {
-  background: #f3f4fe;
-  padding: 120px 0;
-}
-
-@media (max-width: 767px) {
-  .ud-about {
-    padding: 80px 0;
-  }
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .ud-about-wrapper {
@@ -2149,7 +2139,7 @@ p {
 
 .blog-heading{
   color: black;
-  font-size: 32px;
+  font-size: 42px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -3033,6 +3023,55 @@ p {
   .size1, .size2, .size3, .size4, .size5{
     font-size: 16px;
     color: var(--body-color);
+  }
+}
+
+.ud-about{
+  .card{
+    width: 18rem;
+    height: 10rem;
+    margin: 10px;
+    margin-right: 30px;
+  }
+}
+
+.about-desc{
+  margin-bottom: 40px;
+}
+
+.about-heading{
+  color: black;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about-img{
+  border-radius: 42px;
+}
+
+.about-card{
+  padding: 0;
+}
+
+.about-vision{
+  margin-top: 0px;
+}
+
+@media (max-width: 412px) {
+  .ud-about{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .card{
+      width: 20rem;
+      height: 10rem;
+    }
+  }
+  .about-img{
+    border-radius: 0;
+  }
+  .about-heading{
+    font-size: 32px;
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
