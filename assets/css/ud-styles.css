@@ -870,7 +870,7 @@ p {
 
 .ud-section-title h2 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 38px;
   line-height: 55px;
   text-transform: capitalize;
   color: var(--heading-color);
@@ -1727,7 +1727,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   max-width: 100%;
-  width: 330px;
+  width: 400px;
   margin-bottom: 30px;
 }
 
